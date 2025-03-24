@@ -1,0 +1,8 @@
+exp/
+exp-test/
+output/
+visual/
+log/
+*.log
+*.ckpt
+dataset_link
