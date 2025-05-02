@@ -2,7 +2,7 @@
 
 This repository is the official implementation of the paper:
 
-**[\[CVPR 2025\] CamPoint: Boosting Point Cloud Segmentation with Virtual Camera]()**.
+**[\[CVPR 2025\] CamPoint: Boosting Point Cloud Segmentation with Virtual Camera](http://freekatz.github.io/publications/2025-campoint/CamPoint_CameraReady.pdf)**.
 
 > TL;DR: The ***CamPoint*** employs **Camera Visibility Feature(CVF)** to encode points as feature vector via virtual cameras, representing the visibility from multiple camera views. Mainly works include:
 > - **Camera Perspective Slice Distance(CPSD)**: Identifies semantically related neighbors rather than just spatially closest points to enhance local feature aggregation.
