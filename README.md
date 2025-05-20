@@ -30,7 +30,6 @@ Train and test datasets:
 ## Model Zoo
 
 - checkpoints and train logs: https://huggingface.co/MTXAI/CamPoint/tree/main/exp
-- test logs: https://huggingface.co/MTXAI/CamPoint/tree/main/exp-test
 - tensorboard: https://huggingface.co/MTXAI/CamPoint/tensorboard
 
 
