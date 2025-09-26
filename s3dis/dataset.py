@@ -27,7 +27,7 @@ class S3DIS(Dataset):
 
     def __init__(self,
                  dataset_dir: Path,
-                 area="!5",
+                 area="!3",
                  loop=30,
                  train=True,
                  warmup=False,
