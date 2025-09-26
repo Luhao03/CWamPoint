@@ -13,24 +13,16 @@ from utils.cutils import grid_subsampling, grid_subsampling_test
 
 class S3DIS(Dataset):
     classes = [
-        'ceiling', 'floor', 'wall', 'beam',
-        'column', 'window', 'door', 'chair',
-        'table', 'bookcase', 'sofa', 'board',
-        'clutter']
+        'slope', 'citygates', 'wall', 'promenade',
+        'crenellation', 'parapet', 'other']
     num_classes = len(classes)
-    class2color = {'ceiling': (23., 190., 207.),
-                   'floor': (152., 223., 138.),
+    class2color = {slope': (23., 190., 207.),
+                   'citygates': (152., 223., 138.),
                    'wall': (174., 199., 232.),
-                   'beam': (255., 187., 120.),
-                   'column': (255., 127., 14.),
-                   'window': (197., 176., 213.),
-                   'door': (214., 39., 40.),
-                   'table': (255., 152., 150.),
-                   'chair': (188., 189., 34.),
-                   'sofa': (140., 86., 75.),
-                   'bookcase': (148., 103., 189.),
-                   'board': (196., 156., 148.),
-                   'clutter': [0, 0, 0]}
+                   'promenade': (255., 187., 120.),
+                   'crenellation': (255., 127., 14.),
+                   'parapet': (197., 176., 213.),
+                   'other': (214., 39., 40.)}
     cmap = [*class2color.values()]
 
     def __init__(self,
