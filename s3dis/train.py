@@ -348,7 +348,7 @@ if __name__ == '__main__':
     cfg.use_amp = not cfg.no_amp
 
     # s3dis
-    cfg.num_classes = 13
+    cfg.num_classes = 7
     cfg.ignore_index = -100
 
     prepare_exp(cfg)
