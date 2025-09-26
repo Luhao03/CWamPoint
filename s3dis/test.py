@@ -223,7 +223,7 @@ if __name__ == '__main__':
         cfg.model_cfg.backbone_cfg.bn_momentum = 1 - (1 - cfg.model_cfg.bn_momentum) ** 0.5
 
     # s3dis
-    cfg.num_classes = 13
+    cfg.num_classes = 7
     cfg.ignore_index = -100
 
     prepare_exp(cfg)
