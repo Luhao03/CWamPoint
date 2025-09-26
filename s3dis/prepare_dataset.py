@@ -17,23 +17,16 @@ def prepare(i, o):
     o.mkdir(exist_ok=True)
 
     labels_dict = {
-        "ceiling": 0,
-        "floor": 1,
+       "slope": 0,
+        "citygates": 1,
         "wall": 2,
-        "beam": 3,
-        "column": 4,
-        "window": 5,
-        "door": 6,
-        "table": 7,
-        "chair": 8,
-        "sofa": 9,
-        "bookcase": 10,
-        "board": 11,
-        "clutter": 12,
-        "stairs": 12
+        "promenade": 3,
+        "crenellation": 4,
+        "parapet": 5,
+        "other": 6
     }
 
-    for area_number in range(1, 7):
+    for area_number in range(1, 6):
         print(f'Reencoding point clouds of area {area_number:d}')
         dir = i / f'Area_{area_number:d}'
         if not dir.exists():
